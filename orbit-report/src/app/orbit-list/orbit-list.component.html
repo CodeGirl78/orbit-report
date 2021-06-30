@@ -7,12 +7,12 @@
       <th>Orbit Type</th>
       <th>Launch Date</th>
    </tr>
-   <!-- TODO: put <tr *ngFor=""></tr> here -->
-   <tr *ngFor="let x of satellites">
-      <td>{{ x.name }}</td>
-      <td [class.warning]="x.shouldShowWarning()">{{ x.type }}</td>
-      <td>{{ x.operational }}</td>
-      <td>{{ x.orbitType }}</td>
-      <td>{{ x.launchDate }}</td>
-</tr>
+   <!-- Put <tr *ngFor=""></tr> here -->
+   <tr *ngFor="let satellite of satellites" [class.warning]="satellite.shouldShowWarning()" [class.stripe]="satellite.stripes(satellites)">
+      <td>{{satellite.name}}</td>
+      <td [class.warning]="satellite.shouldShowWarning()">{{satellite.type}}</td>
+      <td>{{satellite.operational}}</td>
+      <td>{{satellite.orbitType}}</td>
+      <td>{{satellite.launchDate}}</td>
+   </tr>
 </table>
