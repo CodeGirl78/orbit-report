@@ -13,11 +13,16 @@ export class Satellite {
         this.launchDate = launchDate;
    }
 
-   shouldShowWarning(): boolean {
-        if(this.type === "Space Debris") {
-            return true; 
+    shouldShowWarning (): boolean {
+        let debris: string = "Space Debris"
+        if (this.type.toLowerCase() === debris.toLocaleLowerCase()) {
+            return true;
         } else {
-            return false; 
+        return false;
         }
+    }
+
+    stripes(arr): boolean {
+    return arr.indexOf(this) % 2 === 0 && this.type.toLowerCase() !== 'space debris';
     }
 }
