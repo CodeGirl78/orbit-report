@@ -4,16 +4,16 @@
 }
 
 .warning {
-    background-color: #4ed8cc;
+    background-color: rgb(253, 189, 189);
 }
 
 table {
-  color: rgb(46, 1, 46);
+  color: black;
   border-radius: 5px;
   overflow: hidden;
   margin: 12px 0;
   min-width: 400px;
-  background: #b8035d;
+  background: white;
 }
 
 .header-row {
@@ -26,3 +26,8 @@ th, td {
     margin: 5px 10px;
     padding: 6px;
 }
+
+.stripe {
+    background-color: hsl(222, 100%, 90%);
+    color: black;
+  }
