@@ -1,7 +1,9 @@
 .counts {
-    background: #34495E;
-    color: #fff;
-    border-radius: 5px;
+    background: hsl(222, 100%, 90%);
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
     width: 225px;
 }
 
@@ -11,4 +13,9 @@
 
 .counts span {
     float: right;
+}
+
+.header {
+    background-color: #34495E;
+    color: white;
 }
